@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Lucas Vinhal Ferreira — Engenharia de Computação, Sistemas Embarcados, C/C++, Linux, IoT">
+    <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f6f8fa" media="(prefers-color-scheme: light)">
+    <title>Lucas Vinhal Ferreira — Portfolio Interativo</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome with local fallback -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="fontawesome-fallback.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="fontawesome-fallback.css"></noscript>
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- Header & Navigation -->
+    <header class="navbar" role="banner">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Lucas Vinhal Ferreira - Início">&lt;Lucas.Dev /&gt;</a>
+            
+            <nav class="nav-links" id="nav-links" role="navigation" aria-label="Navegação principal">
+                <a href="#about"><i class="fa-solid fa-user" aria-hidden="true"></i> Sobre</a>
+                <a href="#skills"><i class="fa-solid fa-code" aria-hidden="true"></i> Habilidades</a>
+                <a href="#projects"><i class="fa-solid fa-folder-open" aria-hidden="true"></i> Projetos</a>
+                <a href="#interactive"><i class="fa-solid fa-terminal" aria-hidden="true"></i> Terminal & Demos</a>
+                <a href="#contact"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contato</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn-theme" aria-label="Alternar tema escuro/claro" type="button">
+                    <i class="fa-solid fa-sun" id="theme-icon" aria-hidden="true"></i>
+                </button>
+                <button id="nav-toggle" class="btn-nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links" type="button">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <div class="badge" aria-label="Área de atuação"><i class="fa-solid fa-microchip" aria-hidden="true"></i> Engenharia de Computação</div>
+                <h1 id="hero-title">Olá, eu sou <span class="highlight">Lucas Vinhal Ferreira</span></h1>
+                <p class="subtitle">Estudante de Engenharia de Computação focado em Sistemas Embarcados, Desenvolvimento C/C++, Infraestrutura Linux e Automação.</p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket" aria-hidden="true"></i> Ver Projetos</a>
+                    <a href="#interactive" class="btn btn-secondary"><i class="fa-solid fa-terminal" aria-hidden="true"></i> Abrir Terminal</a>
+                    <a href="https://github.com/romunac" target="_blank" rel="noopener noreferrer" class="btn btn-outline"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+                <div class="tech-card-floating">
+                    <div class="status-dot" aria-hidden="true"></div>
+                    <div class="tech-text">
+                        <strong>ESP32 & Embedded Systems</strong>
+                        <span>C / C++ • Sensores • IoT</span>
+                    </div>
+                </div>
+                <div class="tech-card-floating delay-1">
+                    <div class="status-dot green" aria-hidden="true"></div>
+                    <div class="tech-text">
+                        <strong>Linux & Infrastructure</strong>
+                        <span>Ubuntu Server • Networks • Security</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section" aria-labelledby="about-title">
+            <div class="section-title">
+                <h2 id="about-title">Sobre Mim</h2>
+                <div class="title-bar" aria-hidden="true"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Formação & Perfil</h3>
+                    <p>Engenharia de Computação na <strong>UniCEUB</strong> (em andamento).</p>
+                    <p>Desenvolvo projetos voltados para programação de baixo nível, microcontroladores como ESP32, administração de sistemas Linux e redes de computadores.</p>
+                    <div class="languages-spoken">
+                        <span><i class="fa-solid fa-language" aria-hidden="true"></i> Português (Nativo)</span>
+                        <span><i class="fa-solid fa-globe" aria-hidden="true"></i> Inglês (Fluente)</span>
+                    </div>
+                </div>
+                <div class="about-stats" role="list" aria-label="Estatísticas de habilidades">
+                    <div class="stat-box" role="listitem">
+                        <span class="stat-number">C / C++</span>
+                        <span class="stat-label">Sistemas & Lógica</span>
+                    </div>
+                    <div class="stat-box" role="listitem">
+                        <span class="stat-number">ESP32</span>
+                        <span class="stat-label">Sistemas Embarcados</span>
+                    </div>
+                    <div class="stat-box" role="listitem">
+                        <span class="stat-number">Linux</span>
+                        <span class="stat-label">Ubuntu Server & Redes</span>
+                    </div>
+                    <div class="stat-box" role="listitem">
+                        <span class="stat-number">Python</span>
+                        <span class="stat-label">Scripting & Automação</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section" aria-labelledby="skills-title">
+            <div class="section-title">
+                <h2 id="skills-title">Habilidades Técnicas</h2>
+                <div class="title-bar" aria-hidden="true"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-code" aria-hidden="true"></i> Linguagens</h3>
+                    <div class="skill-tags" role="list" aria-label="Linguagens de programação">
+                        <span class="tag" role="listitem"><i class="fa-solid fa-c" aria-hidden="true"></i> C / C++</span>
+                        <span class="tag" role="listitem"><i class="fa-brands fa-python" aria-hidden="true"></i> Python</span>
+                        <span class="tag" role="listitem"><i class="fa-brands fa-java" aria-hidden="true"></i> Java</span>
+                        <span class="tag" role="listitem"><i class="fa-brands fa-rust" aria-hidden="true"></i> Rust</span>
+                        <span class="tag" role="listitem"><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML / CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-microchip" aria-hidden="true"></i> Sistemas Embarcados & Hardware</h3>
+                    <div class="skill-tags" role="list" aria-label="Habilidades de sistemas embarcados">
+                        <span class="tag" role="listitem">ESP32</span>
+                        <span class="tag" role="listitem">Arduino</span>
+                        <span class="tag" role="listitem">Microcontroladores</span>
+                        <span class="tag" role="listitem">Sensores (CO2 / SCD30)</span>
+                        <span class="tag" role="listitem">Eletrônica Digital</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-server" aria-hidden="true"></i> Infraestrutura & Redes</h3>
+                    <div class="skill-tags" role="list" aria-label="Habilidades de infraestrutura">
+                        <span class="tag" role="listitem"><i class="fa-brands fa-linux" aria-hidden="true"></i> Linux / Ubuntu Server</span>
+                        <span class="tag" role="listitem">Redes de Computadores</span>
+                        <span class="tag" role="listitem">SSH & Firewall (UFW)</span>
+                        <span class="tag" role="listitem">Git & GitHub</span>
+                        <span class="tag" role="listitem">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <div class="section-title">
+                <h2 id="projects-title">Projetos em Destaque</h2>
+                <div class="title-bar" aria-hidden="true"></div>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="filter-controls" role="group" aria-label="Filtrar projetos por categoria">
+                <button class="filter-btn active" data-filter="all" type="button">Todos</button>
+                <button class="filter-btn" data-filter="embedded" type="button">Sistemas Embarcados</button>
+                <button class="filter-btn" data-filter="c-cpp" type="button">Programação C / C++</button>
+                <button class="filter-btn" data-filter="python" type="button">Python</button>
+                <button class="filter-btn" data-filter="linux" type="button">Linux & Infraestrutura</button>
+            </div>
+
+            <div class="projects-grid" role="list" aria-label="Lista de projetos">
+                <!-- Project Card 1 -->
+                <article class="project-card" data-category="embedded" role="listitem">
+                    <div class="project-header">
+                        <i class="fa-solid fa-microchip project-icon" aria-hidden="true"></i>
+                        <span class="project-badge">Embarcados</span>
+                    </div>
+                    <h3>Monitoramento de CO2 com ESP32</h3>
+                    <p>Sistema de medição e monitoramento contínuo de níveis de dióxido de carbono (CO2) em ambientes fechados utilizando ESP32 e sensor de precisão SCD30.</p>
+                    <div class="project-tech" aria-label="Tecnologias utilizadas">
+                        <span>ESP32</span>
+                        <span>Sensor SCD30</span>
+                        <span>C / C++</span>
+                        <span>IoT</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-demo-link" data-demo="co2" type="button"><i class="fa-solid fa-play" aria-hidden="true"></i> Testar Demo Live</button>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="project-card" data-category="c-cpp" role="listitem">
+                    <div class="project-header">
+                        <i class="fa-solid fa-calculator project-icon" aria-hidden="true"></i>
+                        <span class="project-badge">C / C++</span>
+                    </div>
+                    <h3>Calculadora Interativa em C</h3>
+                    <p>Programa desenvolvido em linguagem C para execução de operações matemáticas fundamentais com validação de entradas e tratamento de divisão por zero.</p>
+                    <div class="project-tech" aria-label="Tecnologias utilizadas">
+                        <span>Linguagem C</span>
+                        <span>CLI</span>
+                        <span>Lógica de Programação</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-demo-link" data-demo="calc" type="button"><i class="fa-solid fa-terminal" aria-hidden="true"></i> Executar no Navegador</button>
+                    </div>
+                </article>
+
+                <!-- Project Card 3 -->
+                <article class="project-card" data-category="python" role="listitem">
+                    <div class="project-header">
+                        <i class="fa-brands fa-python project-icon" aria-hidden="true"></i>
+                        <span class="project-badge">Python</span>
+                    </div>
+                    <h3>Jogo Adivinhe o Número</h3>
+                    <p>Aplicação interativa em Python que gera números randômicos com dicas condicionais ("Muito alto", "Muito baixo") e contagem inteligente de tentativas.</p>
+                    <div class="project-tech" aria-label="Tecnologias utilizadas">
+                        <span>Python 3</span>
+                        <span>Random</span>
+                        <span>Lógica de Jogos</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-demo-link" data-demo="guess" type="button"><i class="fa-solid fa-gamepad" aria-hidden="true"></i> Jogar Agora</button>
+                    </div>
+                </article>
+
+                <!-- Project Card 4 -->
+                <article class="project-card" data-category="linux" role="listitem">
+                    <div class="project-header">
+                        <i class="fa-solid fa-server project-icon" aria-hidden="true"></i>
+                        <span class="project-badge">Linux</span>
+                    </div>
+                    <h3>Ubuntu Server — Infraestrutura & Segurança</h3>
+                    <p>Projeto de servidor Linux focado em arquitetura de redes, acesso remoto seguro via SSH, políticas de firewall UFW / Fail2Ban, e alta disponibilidade.</p>
+                    <div class="project-tech" aria-label="Tecnologias utilizadas">
+                        <span>Ubuntu Server</span>
+                        <span>SSH</span>
+                        <span>UFW / Fail2Ban</span>
+                        <span>Redes</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/romunac/ubuntu-server-monitoramento" target="_blank" rel="noopener noreferrer" class="btn-demo-link"><i class="fa-brands fa-github" aria-hidden="true"></i> Ver no GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Interactive Section: Terminal & Demos -->
+        <section id="interactive" class="section" aria-labelledby="interactive-title">
+            <div class="section-title">
+                <h2 id="interactive-title">Sandbox Interativo & Terminal</h2>
+                <p class="section-subtitle">Explore o portfolio via linha de comando ou interaja com os programas desenvolvidos diretamente no navegador!</p>
+                <div class="title-bar" aria-hidden="true"></div>
+            </div>
+
+            <div class="interactive-container">
+                <!-- Terminal Emulator Widget -->
+                <div class="terminal-window" role="region" aria-label="Terminal interativo" tabindex="0">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons" aria-hidden="true">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="terminal-title">lucas@embedded-portfolio:~ (bash)</div>
+                    </div>
+                    <div class="terminal-body" id="terminal-body" role="log" aria-live="polite" aria-label="Saída do terminal">
+                        <p class="terminal-line">Bem-vindo ao terminal interativo de <strong style="color: var(--primary-color)">Lucas Vinhal Ferreira</strong>.</p>
+                        <p class="terminal-line">Digite <span class="cmd-highlight">'help'</span> para listar os comandos disponíveis ou <span class="cmd-highlight">'projects'</span> para explorar o portfólio.</p>
+                    </div>
+                    <div class="terminal-input-row">
+                        <span class="prompt" aria-hidden="true">lucas@portfolio:~$</span>
+                        <input type="text" id="terminal-input" placeholder="Digite um comando (ex: help, about, calc, guess)..." autocomplete="off" spellcheck="false" aria-label="Entrada de comando do terminal">
+                    </div>
+                </div>
+
+                <!-- Live Demo Runner Area -->
+                <div class="demo-runner-window" id="demo-runner" role="region" aria-label="Executor de demos interativas">
+                    <div class="runner-header">
+                        <h3 id="demo-title"><i class="fa-solid fa-play" aria-hidden="true"></i> Executor de Demos Interativas</h3>
+                        <div class="demo-tabs" role="tablist" aria-label="Selecionar demonstração">
+                            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="demo-calc" id="tab-calc" type="button">Calculadora C</button>
+                            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="demo-guess" id="tab-guess" type="button">Jogo Adivinhar</button>
+                            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="demo-co2" id="tab-co2" type="button">Simulador CO2</button>
+                        </div>
+                    </div>
+
+                    <div class="runner-body">
+                        <!-- Demo 1: C Calculator -->
+                        <div id="demo-calc" class="demo-box active" role="tabpanel" aria-labelledby="tab-calc">
+                            <h4><i class="fa-solid fa-calculator" aria-hidden="true"></i> Calculadora (Baseada em <code>projetos/calculadora.c</code>)</h4>
+                            <div class="calc-interface">
+                                <div class="calc-inputs">
+                                    <label for="calc-num1" class="visually-hidden">Primeiro número</label>
+                                    <input type="number" id="calc-num1" placeholder="Número 1" value="10" step="any">
+                                    <label for="calc-op" class="visually-hidden">Operador</label>
+                                    <select id="calc-op">
+                                        <option value="+">+</option>
+                                        <option value="-">−</option>
+                                        <option value="*">×</option>
+                                        <option value="/">÷</option>
+                                    </select>
+                                    <label for="calc-num2" class="visually-hidden">Segundo número</label>
+                                    <input type="number" id="calc-num2" placeholder="Número 2" value="5" step="any">
+                                    <button class="btn btn-primary" id="calc-run" type="button"><i class="fa-solid fa-equals" aria-hidden="true"></i> Calcular</button>
+                                </div>
+                                <div class="calc-output" id="calc-result" aria-live="polite">
+                                    Clique em "Calcular" para ver a saída compilada do código C.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Demo 2: Python Guess Number Game -->
+                        <div id="demo-guess" class="demo-box" role="tabpanel" aria-labelledby="tab-guess" hidden>
+                            <h4><i class="fa-solid fa-gamepad" aria-hidden="true"></i> Jogo Adivinhe o Número (Baseado em <code>projetos/adivinhe o numero.py</code>)</h4>
+                            <div class="guess-interface">
+                                <p>Estou pensando em um número de 1 a 100... Tente adivinhar!</p>
+                                <div class="guess-controls">
+                                    <label for="guess-input" class="visually-hidden">Seu palpite</label>
+                                    <input type="number" id="guess-input" min="1" max="100" placeholder="Digite seu palpite..." aria-describedby="guess-result">
+                                    <button class="btn btn-primary" id="guess-submit" type="button"><i class="fa-solid fa-check" aria-hidden="true"></i> Palpitar</button>
+                                    <button class="btn btn-secondary" id="guess-reset" type="button"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i> Reiniciar</button>
+                                </div>
+                                <div class="guess-output" id="guess-result" aria-live="polite">
+                                    Aguardando seu palpite...
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Demo 3: Sensor Simulator -->
+                        <div id="demo-co2" class="demo-box" role="tabpanel" aria-labelledby="tab-co2" hidden>
+                            <h4><i class="fa-solid fa-microchip" aria-hidden="true"></i> Telemetria de CO2 - ESP32 + SCD30</h4>
+                            <div class="co2-interface">
+                                <div class="co2-gauge-container">
+                                    <div class="co2-gauge" aria-label="Valor atual de CO2">
+                                        <span class="co2-value" id="co2-val">420</span>
+                                        <span class="co2-unit">PPM</span>
+                                    </div>
+                                    <div class="co2-status" id="co2-status" aria-live="polite">Qualidade do Ar: excelente</div>
+                                </div>
+                                <div class="co2-actions">
+                                    <button class="btn btn-primary" id="co2-manual" type="button"><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i> Simular Nova Leitura</button>
+                                    <button class="btn btn-outline" id="auto-co2-btn" type="button"><i class="fa-solid fa-pause" aria-hidden="true"></i> Auto Leitura (Ativo)</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section" aria-labelledby="contact-title">
+            <div class="section-title">
+                <h2 id="contact-title">Entre em Contato</h2>
+                <div class="title-bar" aria-hidden="true"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Vamos conversar!</h3>
+                    <p>Estou disponível para oportunidades de projetos, estágios e colaborações técnicas em Engenharia e Desenvolvimento de Software.</p>
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p><a href="mailto:lucasvinhal3001@gmail.com">lucasvinhal3001@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            <div>
+                                <strong>GitHub</strong>
+                                <p><a href="https://github.com/romunac" target="_blank" rel="noopener noreferrer">github.com/romunac</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <p><a href="https://www.linkedin.com/in/lucas-vinhal-24334a2b3" target="_blank" rel="noopener noreferrer">Lucas Vinhal Ferreira</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Seu Nome</label>
+                        <input type="text" id="name" name="name" required placeholder="Digite seu nome completo" autocomplete="name">
+                        <span class="form-error" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Seu Email</label>
+                        <input type="email" id="email" name="email" required placeholder="nome@exemplo.com" autocomplete="email">
+                        <span class="form-error" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Sua Mensagem</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Escreva sua mensagem..."></textarea>
+                        <span class="form-error" aria-live="polite"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enviar Mensagem</button>
+                    <div id="form-toast" class="form-toast" role="status" aria-live="polite"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <p>&copy; <span id="current-year"></span> Lucas Vinhal Ferreira — Engenharia de Computação. Desenvolvido com HTML, CSS e JavaScript Interativo.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
